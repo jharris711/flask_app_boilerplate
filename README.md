@@ -8,7 +8,7 @@ To use:
     
 -> Open your terminal
 
--> Navigate to the `flask_app_bootstrap` dir
+-> Navigate to the `flask_app_boilerplate` dir
 
 -> Set up a virtualenv environment: ` $ virtualenv env `
 
