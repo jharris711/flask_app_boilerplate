@@ -14,9 +14,9 @@ To use:
 
 -> Activate virtual environment: ` $ source env/bin/activate `
 
--> Install dependencies: ` $ pip install flask flask-sqlalchemy flask-migrate flask-wtf flask-script gunicorn python-dotenv `
+-> Install dependencies: ` $ pip install -r requirements.txt `
 
--> Set .env variables. FLASK_ENV, FLASK_APP, SQLALCHEMY_DATABASE_URI have default settings. You will need to set secret key.
+-> Set .env variables. FLASK_ENV, FLASK_APP, DATABASE_URL have default settings. You will need to set secret key.
 
 -> Configure .gitignore
 
