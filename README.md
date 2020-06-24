@@ -6,24 +6,24 @@ Pre-reqs: Virtualenv
 
 To use:
     
--> Open your terminal
+    -> Open your terminal
 
--> Navigate to the `flask_app_bootstrap` dir
+    -> Navigate to the `flask_app_bootstrap` dir
 
--> Set up a virtualenv environment: ` $ virtualenv env `
+    -> Set up a virtualenv environment: ` $ virtualenv env `
 
--> Activate virtual environment: ` $ source env/bin/activate `
+    -> Activate virtual environment: ` $ source env/bin/activate `
 
--> Install dependencies: ` $ pip install flask flask-sqlalchemy flask-migrate flask-wtf flask-script gunicorn python-dotenv `
+    -> Install dependencies: ` $ pip install flask flask-sqlalchemy flask-migrate flask-wtf flask-script gunicorn python-dotenv `
 
--> Set .env variables. FLASK_ENV, FLASK_APP, SQLALCHEMY_DATABASE_URI have default settings. You will need to set secret key.
+    -> Set .env variables. FLASK_ENV, FLASK_APP, DATABASE_URL have default settings. You will need to set the secret key, host, and port.
 
--> Configure .gitignore
+    -> Configure .gitignore
 
--> Initialize DB: ` $ flask db init `
+    -> Initialize DB: ` $ flask db init `
 
--> Create your models in models.py
+    -> Create your models in models.py
 
--> To make migrations: ` $ flask db migrate `
+    -> To make migrations: ` $ flask db migrate `
 
--> To apply migrations: ` $ flask db upgrade `
+    -> To apply migrations: ` $ flask db upgrade `
