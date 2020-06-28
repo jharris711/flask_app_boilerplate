@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-
+import os
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -10,7 +10,7 @@ migrate = Migrate()
 def create_app():
     # Construct the core application.
     app = Flask(__name__, instance_relative_config=False)
-    app.config.from_object('config.Config')
+    app.config.from_object(os.environ['APP_SETTINGS'])
 
     db.init_app(app)
     migrate.init_app(app, db)

@@ -12,6 +12,10 @@ class Config:
     SECRET_KEY = environ.get('SECRET_KEY')
     FLASK_APP = environ.get('FLASK_APP')
     FLASK_ENV = environ.get('FLASK_ENV')
+    CSRF_ENABLED = True
+    DEBUG = True
+    if FLASK_ENV == 'production':
+        DEBUG = False
 
     # Database
     SQLALCHEMY_DATABASE_URI = environ.get('DATABASE_URL')
