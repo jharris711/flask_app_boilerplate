@@ -1,8 +1,8 @@
 # Flask App Boilerplate
 
-Quick start for Flask apps.
+Quick start for Flask apps. Procfile is added for Heroku deployment with Gunicorn. Requirements.txt will install Flask, Flask-migrate, flask-SQLAlchemy, Flask-WTForms, Gunicorn, and Python-dotenv.
 
-Pre-reqs: Virtualenv
+Pre-reqs: Virtualenv, PostgreSQL (recommended) or SQLite3
 
 To use:
     
@@ -16,14 +16,14 @@ To use:
 
 -> Install dependencies: ` $ pip install -r requirements.txt `
 
--> Set .env variables. FLASK_ENV, FLASK_APP, DATABASE_URL have default settings. You will need to set secret key.
+-> Set .env variables
 
 -> Configure .gitignore
 
+-> Create your models in models.py: Declaring models => https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
+
 -> Initialize DB: ` $ flask db init `
 
--> Create your models in models.py
+-> Make migrations: ` $ flask db migrate `
 
--> To make migrations: ` $ flask db migrate `
-
--> To apply migrations: ` $ flask db upgrade `
+-> Apply migrations: ` $ flask db upgrade `
